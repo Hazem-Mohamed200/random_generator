@@ -7,9 +7,9 @@ class WordPairGenerator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NavigationDrawer(),
+      drawer: const NavigationDrawer(),
       appBar: AppBar(
-        title: Text('Word Pair Generator'),
+        title: const Text('Word Pair Generator'),
       ),
     );
   }

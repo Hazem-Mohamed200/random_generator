@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:random_generator/home_screen.dart';
-import 'package:random_generator/wordPair_generator.dart';
+import 'package:random_generator/word_pair_generator.dart';
 import 'color_generator.dart';
 
 class NavigationDrawer extends StatelessWidget {
@@ -60,18 +60,18 @@ void selectPage(BuildContext context, int id) {
     case 0:
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => ColorGenerator()),
+        MaterialPageRoute(builder: (context) => const ColorGenerator()),
       );
       break;
     case 1:
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => WordPairGenerator()),
+        MaterialPageRoute(builder: (context) => const WordPairGenerator()),
       );
       break;
     case 2:
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => HomeScreen()));
+          context, MaterialPageRoute(builder: (context) => const HomeScreen()));
       break;
   }
 }
