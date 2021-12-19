@@ -10,8 +10,8 @@ class ColorGenerator extends StatefulWidget {
 }
 
 class _ColorGeneratorState extends State<ColorGenerator> {
-  @override
   Color _color = randomColor();
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const NavigationDrawer(),
